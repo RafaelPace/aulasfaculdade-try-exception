@@ -1,0 +1,11 @@
+public class ConversaoStringNumero {
+    public static void main(String[] args) {
+        String numeroStr = "123a";
+        try {
+            int numero = Integer.parseInt(numeroStr);
+            System.out.println("Número convertido: " + numero);
+        } catch (NumberFormatException e) {
+            System.out.println("Erro de formatação: " + e.getMessage());
+        }
+    }
+}
